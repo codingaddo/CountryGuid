@@ -14,20 +14,20 @@ body{
     height: 100vh;
     gap: 2vw;
 }
+.main{
+    background-color: white;
+    padding: 4vw;
+    max-height: 45vw;
+}
 
 
 .container{
-    background-color: #f1f1f1;
     width: 40vw;
     height: 5vw;
-    /* position: relative; */
-    top: 10vw;
-    border-radius: .5vw;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 2.5vw;
-    box-shadow: 0 1.5px 1px 0;
 }
 input{
     background-color: transparent;
@@ -41,8 +41,8 @@ input{
 }
 
 button{
-    padding: .5vw;
-    width: 10vw;
+    padding: .3vw;
+    width: 12vw;
     outline: none;
     border: transparent;
     border-radius: .25vw;
@@ -60,8 +60,7 @@ button:hover{
 }
 .result{
     background-color: white;
-    width: 50vw;
-    height:30vw;
+    width: 40vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -70,6 +69,27 @@ button:hover{
 .flag-img{
     width: 20vw;
     height: 15vw;
-    margin: 1.8em auto 1.2em auto;
+    /* margin: 1.8em auto 1.2em auto; */
 }
 
+.txt{
+    position: relative;
+    top: 2vw;
+    display: flex;
+    flex-direction: column;
+    gap:.7vw;
+}
+.txt h4{
+    font-weight: 900;
+    color: rgb(24, 23, 23);
+    font-size: 1.1vw;
+    letter-spacing: .1vw;
+}
+.txt h4 span{
+    font-weight: 300;
+
+}
+h1{
+    font-size: 3.5vw;
+    letter-spacing: .1vw;
+}
