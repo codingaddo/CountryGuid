@@ -19,8 +19,24 @@ searchBtn.addEventListener('click',()=>{
 
 
         results.innerHTML = `
-            <img src="${data[0].flags.svg}" class="flag-img">
+        <h1>${data[0].name.common}</h1>
+            <img src="${data[0].flags.svg}" class="flag-img"/>
+            <div class="txt">
+                <h4>Continent:<span> ${data[0].continents[0]}<span/></h4>
+                <h4>Population:<span> ${data[0].population}<span/></h4>
+                <h4>Capital: <span> ${data[0].capital[0]}<span/></h4>
+                <h4>Currency:<span> ${Object.keys(data[0].currencies)[0]}<span/></h4>
+                <h4>Currency Name:<span> ${data[0].currencies[Object.keys(data[0].currencies)].name}<span/></h4>
+                <h4>Common Language: <span> ${Object.values(data[0].languages).toString().split(',').join(',')}<span/></h4>
+            </div>
         `
+    }).catch(()=>{
+        if(countryName===''){
+            results.innerHTML = `<h2>Input can't be empty<h2>`
+        }else{
+            results.innerHTML = `<h2>Please enter a valid Country name<h2>`
+
+        }
     })
     
     
